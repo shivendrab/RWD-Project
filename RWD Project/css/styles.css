@@ -1,0 +1,118 @@
+/* use this to put borders around things... */
+.crop-img{
+  max-height:150px;
+  max-width:100%;
+  margin-bottom: 10px;
+}
+
+.large-img{
+  max-width:50%;
+  max-height:400px;
+  display:block;
+  margin:auto;
+}
+
+.navbar-nav .nav-link {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.product-grid {text-align: center; background-color: white}
+.product-image {padding-top: 10%;}
+
+.product-image3 {padding: 10%;}
+.product-grid3 {background-color: white}
+
+.product-text {position: absolute;padding-left: 4%;}
+
+.product-text-reviews {
+position: absolute;
+padding-left: 4%;     
+padding-top: 8%;
+text-decoration: underline;
+padding-right: 23%;}
+
+.star-rating {
+  line-height:32px;
+  font-size:1.25em;
+}
+
+.star-rating .fa-star{color: orange;}
+
+.content-body{
+  padding-left: 5%; 
+  padding-right: 5%; 
+}
+
+.content-newsletter{
+  padding:5%;
+  background-color: white;
+}
+
+.newsletter{
+  color:  #c54712;
+  text-decoration-style: bold;
+}
+
+.spacing{
+  padding-top: 75px;
+}
+.spacing-small{
+  padding-top: 35px;
+}
+
+.spacing-top{
+  padding-top: 60px;
+}
+
+.button-subscribe{
+  background-color: #c54712 !important;
+  margin-left: 50px;
+  margin-right: -10px;
+  
+}
+.button-loadall{  
+    padding-left: 45%;
+    padding-right: 45%;
+}
+
+.price{
+  padding-bottom: 35px;
+}
+.cart-image{
+      float: left;
+    padding-left: 10px;
+}
+.whishlist-image{
+      float: right;
+    padding-right: 10px;
+}
+.floatright{
+  float: right;
+}
+.footer{
+  background-color: white;
+      padding-top: 85px;
+    padding-bottom: 85px;
+        margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.carouseltext{
+      position: absolute;
+    bottom: 139px;
+    left: 80px;
+}
+
+.carouselmaintext{
+      font-size: 38px;
+    font-weight: 700;
+    color: #f66729;
+}
+
+.button-ordernow{
+  background-color: #c54712  !important;
+  padding-left: 60px   !important;
+    padding-right: 60px   !important;
+  
+}

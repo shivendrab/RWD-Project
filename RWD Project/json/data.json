@@ -1,0 +1,106 @@
+[{
+    "author": "Shivendra bhaskar",
+    "info": [{
+        "label0": "New ",
+        "label01": "Arrivals",
+        "description": "Mobile Phone from top brands are available at the most competative prices"
+    }, {
+        "label0": "Best ",
+        "label01": "Sales",
+        "description": "Find out the best sellers collections"
+    }, {
+        "label0": "New ",
+        "label01": "Arrivals",
+        "description": "Mobile Phone from top brands are available at the most competative prices"
+    }, {
+        "label0": "NEWSLETTER",
+        "label01": "Arrivals",
+        "description": "Subscribe now to get all news and special offers",
+        "buttontext": "Subscribe"
+    }, {
+        "label0": "Load All",
+        "label01": "Arrivals",
+        "description": "Subscribe now to get all news and special offers",
+        "buttontext": "Subscribe"
+    }],
+    "imagesinfo": [{
+         "imgcarosuel":"images/carosuel.png",
+         "imgcart32":"images/cart-32.png",    
+         "imgcart":"images/cart.png",
+         "imgemail":"images/email.png",
+         "imgcons2":"images/icons8-about-2.png",
+         "imgcons24":"images/icons8-about-24.png",
+         "imgcontact":"images/icons8-contacts-24.png",
+         "imggas24":"images/icons8-gas-24.png",
+         "imghome24":"images/icons8-home-24.png",
+         "imgmobile24":"images/icons8-mobile-24.png",
+         "imgsearch24":"images/icons8-search-50.png",
+         "imguser24":"images/icons8-user-24.png",
+         "imglogo":"images/logo.png",
+         "imgmobile1":"images/mobile1.png",
+         "imgmobile2":"images/mobile2.png",
+         "imgpaymenticon":"images/paymenticons.png",
+         "imgsamsung":"images/samsung8.jpg",
+         "imgsony":"images/sony.jpg",
+         "imgthumbnail":"images/thumbnailmobile.png",
+         "imgwhishlist":"images/whishlist.png",
+         "imgwindowcell":"images/windowcell.jpg"
+    }],
+    "navbar": ["Home", "Mobile", "Hot Deals", "About", "Contact Us"],
+    "newarrivals": [{
+        "label0": "Iphone 4",
+        "description": "Add to cart"
+    }, {
+        "label1": "Iphone 4",
+        "description": "Add to cart"
+    }, {
+        "label1": "Iphone 4",
+        "description": "Add to cart"
+    }],
+    "sales": [{
+        "label0": "Iphone 4",
+        "cart": "Add to cart"
+    }, {
+        "label1": "Moto g",
+        "cart": "Add to cart"
+    }, {
+        "label2": "iphone 5",
+        "cart": "Add to cart"
+    }],
+    "mobilescor": [{
+        "id": "MotoG",
+        "h4cormotogtxt": "Moto G",
+        "btncorsonytxt": "Next Gen",
+        "pcormotogtxt": "The latest Moto X series phone. the Moto X4, has been launched exclusively.",
+        "btncormotogtxt": "Order now",
+        "models": ["X Play", "Mustang"]
+    }, {
+        "id": "corsony",
+        "h4corsonytxt": "Sony X",
+        "h5corsonytxt": "Experia",
+        "pcorsonytxt": "The latest Sony X series phone has been launched exclusively.",
+        "btncorsonytxt": "Order now",
+        "models": ["S8", "X5"]
+    }, {
+        "id": "corwin",
+        "h4corwin": "Windows",
+        "h5corwin": "Lumia",
+        "pcorwintxt": "The latest Windows phone has been launched exclusively.",
+        "btncorwin": "Order now",
+        "models": ["Xperia", "X5"]
+    }],
+    "payments": [{
+        "subscription": "Subscribe now to get all news and special offers",
+        "description": "We accept all cards"
+    }, {
+        "btnsubscribe": "Subscribe",
+        "bnwltrtext": "NEWSLETTER"
+    }, {
+        "label2": "Iphone 4",
+        "description": "Add to cart"
+    }],
+    "footer": [{
+        "subfooter": "<ul><li>Subscribe</li><li>Terms and Conditions</li><li>Privacy Policy</li></ul>",
+        "aboutfooter": "<ul><li>About Us</li><li>Contact Us</li><li>Customer Care</li></ul>"
+    }]
+}]
