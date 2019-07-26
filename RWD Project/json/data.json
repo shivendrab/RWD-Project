@@ -24,6 +24,7 @@
         "buttontext": "Subscribe"
     }],
     "imageLoad": [{
+	
          "imgcarousel1":"images/carosuel.png",
 		 "imgcarousel2":"images/carosuel.png",
 		 "imgcarousel3":"images/carosuel.png",
@@ -54,6 +55,7 @@
          "imgemail":"images/email.png",
 		 
 		 "imglogo":"images/logo.png",
+		 "whishlist1":"images/whishlist.png",
 		 
 		 "imgpaymenticon":"images/paymenticons.png"
 		 
