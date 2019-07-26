@@ -24,9 +24,9 @@
         "buttontext": "Subscribe"
     }],
     "imageLoad": [{
-         "imgcarousel1":"images/carousel.png",
-		 "imgcarousel2":"images/carousel.png",
-		 "imgcarousel3":"images/carousel.png",
+         "imgcarousel1":"images/carosuel.png",
+		 "imgcarousel2":"images/carosuel.png",
+		 "imgcarousel3":"images/carosuel.png",
 		 
 		 "imgNewArrival1":"images/mobile1.png",
 		 "imgNewArrival2":"images/mobile1.png",
@@ -52,6 +52,8 @@
 		 "imgReviewsProduct3":"images/thumbnailmobile.png",
 		 
          "imgemail":"images/email.png",
+		 
+		 "imglogo":"images/logo.png",
 		 
 		 "imgpaymenticon":"images/paymenticons.png"
 		 
