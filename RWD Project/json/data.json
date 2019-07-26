@@ -1,93 +1,116 @@
 [{
     "author": "Shivendra bhaskar",
-    "info": [{
-        "label0": "New ",
-        "label01": "Arrivals",
+    "information": [{
+        "Mainlabel01": "New ",
+        "Mainlabel02": "Arrivals",
         "description": "Mobile Phone from top brands are available at the most competative prices"
     }, {
-        "label0": "Best ",
-        "label01": "Sales",
+        "Mainlabel01": "Best ",
+        "Mainlabel02": "Sales",
         "description": "Find out the best sellers collections"
     }, {
-        "label0": "New ",
-        "label01": "Arrivals",
-        "description": "Mobile Phone from top brands are available at the most competative prices"
+        "Mainlabel01": "User",
+        "Mainlabel02": "Reviews",
+        "description": "Find out the best sellers collections"
     }, {
-        "label0": "NEWSLETTER",
-        "label01": "Arrivals",
+        "Mainlabel01": "NEWSLETTER",
+        "Mainlabel02": "type your email here",
         "description": "Subscribe now to get all news and special offers",
-        "buttontext": "Subscribe"
+        "buttontext": "SUBSCRIBE"
     }, {
-        "label0": "Load All",
-        "label01": "Arrivals",
+        "Mainlabel01": "Load All",
+        "Mainlabel02": "email",
         "description": "Subscribe now to get all news and special offers",
         "buttontext": "Subscribe"
     }],
-    "imagesinfo": [{
-         "imgcarosuel":"images/carosuel.png",
-         "imgcart32":"images/cart-32.png",    
-         "imgcart":"images/cart.png",
+    "imageLoad": [{
+         "imgcarousel1":"images/carousel.png",
+		 "imgcarousel2":"images/carousel.png",
+		 "imgcarousel3":"images/carousel.png",
+		 
+		 "imgNewArrival1":"images/mobile1.png",
+		 "imgNewArrival2":"images/mobile1.png",
+		 "imgNewArrival3":"images/mobile1.png",
+		 "imgNewArrival4":"images/mobile1.png",
+		 
+		 "imgNewArrivalcart1":"images/cart.png",
+		 "imgNewArrivalcart2":"images/cart.png",
+		 "imgNewArrivalcart3":"images/cart.png",
+		 "imgNewArrivalcart4":"images/cart.png",
+		   
+		 "imgNewArrivalWish1":"images/whishlist.png",
+		 "imgNewArrivalWish2":"images/whishlist.png",
+		 "imgNewArrivalWish3":"images/whishlist.png",
+		 "imgNewArrivalWish4":"images/whishlist.png",
+		 
+		 "imgSalesProduct1":"images/thumbnailmobile.png",
+		 "imgSalesProduct2":"images/thumbnailmobile.png",
+		 "imgSalesProduct3":"images/thumbnailmobile.png",
+		 
+		 "imgReviewsProduct1":"images/thumbnailmobile.png",
+		 "imgReviewsProduct2":"images/thumbnailmobile.png",
+		 "imgReviewsProduct3":"images/thumbnailmobile.png",
+		 
          "imgemail":"images/email.png",
-         "imgcons2":"images/icons8-about-2.png",
-         "imgcons24":"images/icons8-about-24.png",
-         "imgcontact":"images/icons8-contacts-24.png",
-         "imggas24":"images/icons8-gas-24.png",
-         "imghome24":"images/icons8-home-24.png",
-         "imgmobile24":"images/icons8-mobile-24.png",
-         "imgsearch24":"images/icons8-search-50.png",
-         "imguser24":"images/icons8-user-24.png",
-         "imglogo":"images/logo.png",
-         "imgmobile1":"images/mobile1.png",
-         "imgmobile2":"images/mobile2.png",
-         "imgpaymenticon":"images/paymenticons.png",
-         "imgsamsung":"images/samsung8.jpg",
-         "imgsony":"images/sony.jpg",
-         "imgthumbnail":"images/thumbnailmobile.png",
-         "imgwhishlist":"images/whishlist.png",
-         "imgwindowcell":"images/windowcell.jpg"
+		 
+		 "imgpaymenticon":"images/paymenticons.png"
+		 
     }],
     "navbar": ["Home", "Mobile", "Hot Deals", "About", "Contact Us"],
     "newarrivals": [{
-        "label0": "Iphone 4",
+        "label0": "Iphone 5",
         "description": "Add to cart"
     }, {
-        "label1": "Iphone 4",
+        "label1": "Iphone 6",
         "description": "Add to cart"
     }, {
-        "label1": "Iphone 4",
+        "label2": "Iphone 7",
+        "description": "Add to cart"
+    }, {
+        "label3": "Iphone 8",
         "description": "Add to cart"
     }],
     "sales": [{
-        "label0": "Iphone 4",
+        "label0": "iPhone 6S",
         "cart": "Add to cart"
     }, {
-        "label1": "Moto g",
+        "label1": "Nokia",
         "cart": "Add to cart"
     }, {
-        "label2": "iphone 5",
+        "label2": "Motorola",
         "cart": "Add to cart"
     }],
-    "mobilescor": [{
-        "id": "MotoG",
-        "h4cormotogtxt": "Moto G",
-        "btncorsonytxt": "Next Gen",
-        "pcormotogtxt": "The latest Moto X series phone. the Moto X4, has been launched exclusively.",
-        "btncormotogtxt": "Order now",
-        "models": ["X Play", "Mustang"]
+	"reviews": [{
+        "id": "iPhone 6S",
+        "description": "Very good performance and good look and feel with stylish look"
     }, {
-        "id": "corsony",
-        "h4corsonytxt": "Sony X",
-        "h5corsonytxt": "Experia",
-        "pcorsonytxt": "The latest Sony X series phone has been launched exclusively.",
-        "btncorsonytxt": "Order now",
-        "models": ["S8", "X5"]
+        "id": "Nokia",
+        "description": "Very good performance and good look and feel with stylish look"
     }, {
-        "id": "corwin",
-        "h4corwin": "Windows",
-        "h5corwin": "Lumia",
-        "pcorwintxt": "The latest Windows phone has been launched exclusively.",
-        "btncorwin": "Order now",
-        "models": ["Xperia", "X5"]
+        "id": "Motorola",
+        "description": "Very good performance and good look and feel with stylish look"
+    }],
+    "mobilecarousel": [{
+        "id": "carousel1",
+        "h4carousel1txt": "Moto G",
+        "strongcarousel1txt": "Next Gen",
+        "pcarousel1txt": "The latest Moto X series phone. the Moto X4, has been launched exclusively.",
+        "btncarousel1txt": "Order now",
+        "models": ["X Play", "GR plus"]
+    }, {
+        "id": "carousel2",
+        "h4carousel2txt": "One Plus",
+        "strongcarousel2txt": "7T",
+        "pcarousel2txt": "The latest One Plus 7T phone has been launched exclusively.",
+        "btncarousel2txt": "Order now",
+        "models": ["7T", "7"]
+    }, {
+        "id": "carousel3",
+        "h4carousel3txt": "IPhone",
+        "strongcarousel3txt": "XS Max",
+        "pcarousel3txt": "The latest IPhone XS Max has been launched exclusively.",
+        "btncarousel3txt": "Order now",
+        "models": ["XS", "XR"]
     }],
     "payments": [{
         "subscription": "Subscribe now to get all news and special offers",
@@ -97,7 +120,7 @@
         "bnwltrtext": "NEWSLETTER"
     }, {
         "label2": "Iphone 4",
-        "description": "Add to cart"
+        "description": "payment options"
     }],
     "footer": [{
         "subfooter": "<ul><li>Subscribe</li><li>Terms and Conditions</li><li>Privacy Policy</li></ul>",
