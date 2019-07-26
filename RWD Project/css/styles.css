@@ -116,3 +116,19 @@ padding-right: 23%;}
     padding-right: 60px   !important;
   
 }
+.body-greenbackground{
+background-color: #acc234  !important;
+}
+.whiteBackground{
+	background-color:#FFFFFF !important;
+}
+.whitecolor{
+	color:#FFFFFF !important;
+}
+.ml-5, .mx-5 {
+    margin-left: 2.5rem !important;
+}
+
+.mr-5, .mx-5 {
+    margin-right: 2.5rem !important;
+}
