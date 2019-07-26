@@ -1,391 +1,408 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-	<title>Mobile Gallery</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mobile Gallery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- import bootstrap -->
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- import bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
-	<!-- import our own stylesheet -->
-	<link rel="stylesheet" type="text/css" href="css/styles.css" />
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
-	/>
+    <!-- import our own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
 
-	<!-- import jQuery -->
-	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+    <!-- import jQuery -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- import our own jQuery -->
+    <script src="js/styles.js"></script>
 
-  <script src="js/styles.js"></script>
-  
-  <script>
+    <script>
     $(document).ready(function () {
-      //load data json from external file
-      var url = 'https://raw.githubusercontent.com/vishaldj88/media-project/master/data/content.json';
-      $.getJSON(url)
-        .done(function( data ) {
-          var context =data[0];
-          mobilenamespace.loaddata(context);
-        });   
-    });
-  </script>
+            //load data json from external file
+            var url = 'https://raw.githubusercontent.com/shivendrab/RWD-Project/master/RWD%20Project/json/data.json';
+            $.getJSON(url)
+                .done(function (data) {
+                    var context = data[0];
+                    mobilenamespace.loaddata(context);
+                });
+        });</script>
 
 </head>
 
-<body style="background-color:#acc234">
-	<div class="spacing-top">
-			<img class="pic-1" alt="search" src="images/whishlist.png">
-	</div>
-	<div class="container">
-		<div style="background-color:#FFFFFF">
-			<ul class="nav justify-content-justified">
-				<li class="nav-item mx-5">
-					<h2><img class="nav-link" src="images/logo.png" alt="logo"></img>
-					</h2>
-				</li>
-				<li class="nav-item mx-5">
-					<h2><a class="nav-link disabled" href="#" id="home"></a></h2>
-				</li>
-				<li class="nav-item mx-5">
-					<h2><a class="nav-link disabled" href="#" id="Mobiles"></a></h2>
-				</li>
-				<li class="nav-item mx-5">
-					<h2><a class="nav-link disabled" href="#"  id="hotdeal"></a></h2>
-				</li>
-				<li class="nav-item mx-5">
-					<h2><a class="nav-link disabled" href="#"  id="about"></a></h2>
-				</li>
-				<li class="nav-item mx-5">
-					<h2><a class="nav-link disabled" href="#"  id="contact"></a></h2>
-				</li>
-			</ul>
-		</div>
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-			<!-- Indicators -->
-			<ol class="carousel-indicators">
-				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#myCarousel" data-slide-to="1"></li>
-				<li data-target="#myCarousel" data-slide-to="2"></li>
-			</ol>
 
-			<!-- Wrapper for slides -->
-			<div class="carousel-inner">
-				<div class="item active">
-					<img  id="motocr" alt="Moto G" style="width:100%;">
-
-					<div class="carouseltext">
-					<span class="carouselmaintext"  id="h4cormotog"></span> </br>
-					<h3 id="btncormotog"><strong></strong></h3></br>
-					The latest moto X series phone, the Moto X4</br> </br>
-					<button type="button" class="btn btn-warning button-ordernow" id="btncormotog"> </button>
-					</div>
-					
-				</div>
-
-				<div class="item">
-					<img  id="motocr"  alt="Moto G" style="width:100%;">
-
-					<div class="carouseltext">
-					<span class="carouselmaintext"  id="h4cormotog"></span> </br>
-					<h3  id="btncormotog"><strong></strong></h3></br>
-					The latest moto X series phone, the Moto X4</br> </br>
-					<button type="button" class="btn btn-warning button-ordernow" id="btncormotog"> </button>
-					</div>
-					
-				</div>
-
-				<div class="item">
-					<img  id="motocr"  alt="Moto G" style="width:100%;">
-
-					<div class="carouseltext">
-					<span class="carouselmaintext"  id="h4cormotog"></span> </br>
-					<h3  id="btncormotog"><strong></strong></h3></br>
-					The latest moto X series phone, the Moto X4</br> </br>
-					<button type="button" class="btn btn-warning button-ordernow" id="btncormotog"> </button>
-					</div>
-					
-				</div>
-			</div>
-
-			<!-- Left and right controls -->
-			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="right carousel-control" href="#myCarousel" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right"></span>
-				<span class="sr-only">Next</span>
-			</a>
-		</div>
-		<div class="spacing"></div>
-		<div class="content-body">
-
-			<div style="text-align:center">
-				<h1><span style="color:#FFFFFF">NEW</span> ARRIVALS</h1>
-				<div class="spacing-small"></div>
-				<h2 style="color:#FFFFFF">Mobile phones from top brands are available at the most competitive prices.</h2>
-				<br/>
-			</div>
-			<div class="spacing"></div>
-			<div class="row">
-
-				<div class="col-md-3 col-sm-6">
-					<div class="product-grid">
-						<div class="product-image">
-							<a href="#">
-								<img class="pic-1"  alt="mobile phone" src="images/mobile1.png">
-							</a>
-						</div>
-						<div class="product-content">
-							<h2 class="title"><a href="#">IPhone</a></h2>
-							<div class="price">
-								<a href="#" class="cart-image">
-								<img  alt="cart pic"  src="images/cart.png">
-							</a>
-							<a href="#"  class="whishlist-image">
-								<img  alt="wishlist pic"  src="images/whishlist.png">
-							</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-3 col-sm-6">
-					<div class="product-grid">
-						<div class="product-image">
-							<a href="#">
-								<img class="pic-1"  alt="mobile phone"  src="images/mobile1.png">
-							</a>
-						</div>
-						<div class="product-content">
-							<h2 class="title"><a href="#">Moto G</a></h2>
-							<div class="price">
-								<a href="#" class="cart-image">
-								<img   alt="cart pic"  src="images/cart.png">
-							</a>
-							<a href="#"  class="whishlist-image">
-								<img   alt="wishlist pic"  src="images/whishlist.png">
-							</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-3 col-sm-6">
-					<div class="product-grid">
-						<div class="product-image">
-							<a href="#">
-								<img class="pic-1"  alt="mobile phone"  src="images/mobile1.png">
-							</a>
-						</div>
-						<div class="product-content">
-							<h2 class="title"><a href="#">Moto G</a></h2>
-						<div class="price">
-								<a href="#" class="cart-image">
-								<img   alt="cart pic" src="images/cart.png">
-							</a>
-							<a href="#"  class="whishlist-image">
-								<img   alt="wishlist pic"  src="images/whishlist.png">
-							</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-3 col-sm-6">
-					<div class="product-grid">
-						<div class="product-image">
-							<a href="#">
-								<img class="pic-1"  alt="mobile phone"  src="images/mobile1.png">
-							</a>
-						</div>
-						<div class="product-content">
-							<h2 class="title"><a href="#">Mobile Phone</a></h2>
-							<div class="price">
-								<a href="#" class="cart-image">
-								<img   alt="cart pic"src="images/cart.png">
-							</a>
-							<a href="#"  class="whishlist-image">
-								<img  alt="wishlist pic"  src="images/whishlist.png">
-							</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-
-			</div>
-			<div class="spacing"></div>
-			<button type="button" class="button-loadall"> <h3>Load All</h3></button>
-			<div class="spacing"></div>
-			<div style="text-align:center">
-				<h1><span style="color:#FFFFFF">BEST</span> SALES</h1>
-				<div class="spacing-small"></div>
-				<h2 style="color:#FFFFFF">Find out the best sellers collections</h2>
-				<br/>
-			</div>
-			<div class="spacing"></div>
-			<div class="row">
-
-				<div class="col-md-4">
-					<div class="product-grid3">
-						<div class="product-image3">
-							<span>
-								<a href="#">
-								<img class="pic-1"  alt="mobile phone"  src="images/thumbnailmobile.png">
-							</a>
-							</span>
-							<span class="product-text">
-									<h3 class="title"><a href="#">iPhone 6S</a></h3>						
-					<div class="star-rating">
-        <span class="fa fa-star" data-rating="1"></span>
-							<span class="fa fa-star" data-rating="2"></span>
-							<span class="fa fa-star" data-rating="3"></span>
-							<span class="fa fa-star" data-rating="4"></span>
-							<span class="fa fa-star-o" data-rating="5"></span>
-						</div>
-						</span>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-md-4">
-				<div class="product-grid3">
-					<div class="product-image3">
-						<span>
-								<a href="#">
-								<img class="pic-1"  alt="mobile phone"  src="images/thumbnailmobile.png">
-							</a>
-							</span>
-						<span class="product-text">
-									<h3 class="title"><a href="#">Nokia</a></h3>						
-					<div class="star-rating">
-        <span class="fa fa-star" data-rating="1"></span>
-						<span class="fa fa-star" data-rating="2"></span>
-						<span class="fa fa-star" data-rating="3"></span>
-						<span class="fa fa-star-o" data-rating="4"></span>
-						<span class="fa fa-star-o" data-rating="5"></span>
-					</div>
-					</span>
-				</div>
-			</div>
-		</div>
-
-		<div class="col-md-4">
-			<div class="product-grid3">
-				<div class="product-image3">
-					<span>
-								<a href="#">
-								<img class="pic-1"  alt="mobile phone"  src="images/thumbnailmobile.png">
-							</a>
-							</span>
-					<span class="product-text">
-									<h3 class="title"><a href="#">Motorola</a></h3>						
-					<div class="star-rating">
-        <span class="fa fa-star" data-rating="1"></span>
-					<span class="fa fa-star" data-rating="2"></span>
-					<span class="fa fa-star" data-rating="3"></span>
-					<span class="fa fa-star-o" data-rating="4"></span>
-					<span class="fa fa-star-o" data-rating="5"></span>
-				</div>
-				</span>
-			</div>
-		</div>
-	</div>
-
-
-	</div>
-	<div class="spacing"></div>
-	<div style="text-align:center">
-		<h1><span style="color:#FFFFFF">USER</span> REVIEWS</h1>
-		<div class="spacing-small"></div>
-		<h2 style="color:#FFFFFF">Find out the best sellers collections</h2>
-		<br/>
-	</div>
-	<div class="spacing"></div>
-
-	<div class="row">
-
-		<div class="col-md-4">
-			<div class="product-grid3">
-				<div class="product-image3">
-					<span>
-								<a href="#">
-								<img class="pic-1"  alt="mobile phone"  src="images/thumbnailmobile.png">
-							</a>
-							</span>
-					<span class="product-text-reviews">
-								Very good performance and good look and feel with stylish look						
-						</span>
-				</div>
-			</div>
-		</div>
-
-		<div class="col-md-4">
-			<div class="product-grid3">
-				<div class="product-image3">
-					<span>
-								<a href="#">
-								<img class="pic-1"  alt="mobile phone"  src="images/thumbnailmobile.png">
-							</a>
-							</span>
-					<span class="product-text-reviews">
-								Very good performance and good look and feel with stylish look						
-						</span>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="col-md-4">
-			<div class="product-grid3">
-				<div class="product-image3">
-					<span>
-								<a href="#">
-								<img class="pic-1"  alt="mobile phone"  src="images/thumbnailmobile.png">
-							</a>
-							</span>
-					<span class="product-text-reviews">
-								Very good performance and good look and feel with stylish look						
-						</span>
-				</div>
-			</div>
-		</div>
-
-	</div>
-	<div class="spacing">
-	</div>
-	<div class="content-newsletter">
-	<strong><span class="newsletter">NEWSLETTER</span> Subscribe now to get all news and special offers</strong>
-<span class="floatright">
-		<img   alt="email" src="images/email.png"><span> type your email here</span>
-
-		<button type="button" class="btn btn-warning button-subscribe"> SUBSCRIBE</button>
-		</span>
-	</div>
-	<div class="spacing-small"></div>
-
-
-    <div class="row footer">
-      <div class="col-sm-3 custtextalign" id="about1">
-      <ul><li>About Us</li><li>Contact Us</li><li>Customer Care</li></ul></div>
-      <div class="col-sm-3 custtextalign" id="Sub1">
-      <ul><li>Subscribe</li><li>Terms and Conditions</li><li>Privacy Policy</li></ul></div>
-      <div class="col-sm-3 custtextalign" id="Sub2">
-      <ul><li>Subscribe</li><li>Terms and Conditions</li><li>Privacy Policy</li></ul></div>
-      <div class="col-sm-3">
-        <p id="paymenticons">We accept all cards</p><img alt="payment options" id="imgpayment" src="images/paymenticons.png">
-      </div>
+<body class="body-greenbackground">
+    <div class="spacing-top">
+        <img class="pic-1" id="whishlist1" alt="search"></img>
     </div>
+    <div class="container">
+        <div class="whiteBackground">
+            <ul class="nav justify-content-justified">
+                <li class="nav-item mx-5">
+                    <h2>
+                        <img class="nav-link" id="imglogo" alt="logo"></img>
+                    </h2>
+                </li>
+                <li class="nav-item mx-5">
+                    <h2><a class="nav-link disabled" href="#" id="home"></a></h2>
+                </li>
+                <li class="nav-item mx-5">
+                    <h2><a class="nav-link disabled" href="#" id="Mobiles"></a></h2>
+                </li>
+                <li class="nav-item mx-5">
+                    <h2><a class="nav-link disabled" href="#" id="hotdeal"></a></h2>
+                </li>
+                <li class="nav-item mx-5">
+                    <h2><a class="nav-link disabled" href="#" id="about"></a></h2>
+                </li>
+                <li class="nav-item mx-5">
+                    <h2><a class="nav-link disabled" href="#" id="contact"></a></h2>
+                </li>
+            </ul>
+        </div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
 
-	</div>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img id="imgcarousel1" style="width:100%;"></img>
+                    <div class="carouseltext">
+                        <span class="carouselmaintext" id="h4carousel1txt"></span> </br>
+                        <strong><h3 id="strongcarousel1txt"></h3></strong></br>
+                        <span id="pcarousel1txt"></span></br> </br>
+                        <button type="button" class="btn btn-warning button-ordernow" id="btncarousel1txt"> </button>
+                    </div>
+
+                </div>
+
+                <div class="item">
+                    <img id="imgcarousel2" style="width:100%;"></img>
+                    <div class="carouseltext">
+                        <span class="carouselmaintext" id="h4carousel2txt"></span> </br>
+                        <strong><h3 id="strongcarousel2txt"></h3></strong></br>
+                        <span id="pcarousel2txt"></span></br> </br>
+                        <button type="button" class="btn btn-warning button-ordernow" id="btncarousel2txt"> </button>
+                    </div>
+
+                </div>
+
+                <div class="item">
+                    <img id="imgcarousel3" style="width:100%;"></img>
+                    <div class="carouseltext">
+                        <span class="carouselmaintext" id="h4carousel3txt"></span> </br>
+                        <strong><h3 id="strongcarousel3txt"></h3></strong></br>
+                        <span id="pcarousel3txt"></span></br> </br>
+                        <button type="button" class="btn btn-warning button-ordernow" id="btncarousel3txt"> </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="spacing"></div>
+        <div class="content-body">
+
+            <!-- New Arrival Section Starts -->
+            <div style="text-align:center">
+                <h1>
+                    <label class="whitecolor" id="newArrivalMain1"></label>
+                    <label id="newArrivalMain2"></label>
+                </h1>
+                <div class="spacing-small"></div>
+                <h2 class="whitecolor" id="newArrivalDesc"></h2>
+                <br />
+            </div>
+            <div class="spacing"></div>
+            <div class="row">
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" id="imgNewArrival1">
+                            </a>
+                        </div>
+                        <div class="product-content">
+                            <h2 class="title"><a href="#" id="lnkNewArrival1"></a></h2>
+                            <div class="price">
+                                <a href="#" class="cart-image">
+                                    <img id="imgNewArrivalcart1">
+                                </a>
+                                <a href="#" class="whishlist-image">
+                                    <img id="imgNewArrivalWish1">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" id="imgNewArrival2">
+                            </a>
+                        </div>
+                        <div class="product-content">
+                            <h2 class="title"><a href="#" id="lnkNewArrival2"></a></h2>
+                            <div class="price">
+                                <a href="#" class="cart-image">
+                                    <img id="imgNewArrivalcart2">
+                                </a>
+                                <a href="#" class="whishlist-image">
+                                    <img id="imgNewArrivalWish2">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" id="imgNewArrival3">
+                            </a>
+                        </div>
+                        <div class="product-content">
+                            <h2 class="title"><a href="#" id="lnkNewArrival3"></a></h2>
+                            <div class="price">
+                                <a href="#" class="cart-image">
+                                    <img id="imgNewArrivalcart3">
+                                </a>
+                                <a href="#" class="whishlist-image">
+                                    <img id="imgNewArrivalWish3">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" id="imgNewArrival4">
+                            </a>
+                        </div>
+                        <div class="product-content">
+                            <h2 class="title"><a href="#" id="lnkNewArrival4"></a></h2>
+                            <div class="price">
+                                <a href="#" class="cart-image">
+                                    <img id="imgNewArrivalcart4">
+                                </a>
+                                <a href="#" class="whishlist-image">
+                                    <img id="imgNewArrivalWish4">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
+            </div>
+
+            <!-- New Arrival Section Ends -->
+            <div class="spacing"></div>
+            <button type="button" class="button-loadall"> <h3 id="h3LoadAllbtntxt"></h3></button>
+            <div class="spacing"></div>
+
+            <!-- Best Sales Section Starts -->
+            <div style="text-align:center">
+                <h1>
+                    <label class="whitecolor" id="bestSalesMain1"></label>
+                    <label id="bestSalesMain2"></label>
+                </h1>
+                <div class="spacing-small"></div>
+                <h2 class="whitecolor" id="bestSalesDesc"></h2>
+                <br />
+            </div>
+            <div class="spacing"></div>
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="product-grid3">
+                        <div class="product-image3">
+                            <span>
+                                <a href="#">
+                                    <img class="pic-1" id="imgSalesProduct1">
+                                </a>
+                            </span>
+                            <div class="product-text">
+                                <h3 class="title"><a href="#" id="lnkSalesProduct1"></a></h3>
+                                <div class="star-rating">
+                                    <span class="fa fa-star" data-rating="1"></span>
+                                    <span class="fa fa-star" data-rating="2"></span>
+                                    <span class="fa fa-star" data-rating="3"></span>
+                                    <span class="fa fa-star" data-rating="4"></span>
+                                    <span class="fa fa-star-o" data-rating="5"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="product-grid3">
+                        <div class="product-image3">
+                            <span>
+                                <a href="#">
+                                    <img class="pic-1" id="imgSalesProduct2">
+                                </a>
+                            </span>
+                            <div class="product-text">
+                                <h3 class="title"><a href="#" id="lnkSalesProduct2"></a></h3>
+                                <div class="star-rating">
+                                    <span class="fa fa-star" data-rating="1"></span>
+                                    <span class="fa fa-star" data-rating="2"></span>
+                                    <span class="fa fa-star" data-rating="3"></span>
+                                    <span class="fa fa-star-o" data-rating="4"></span>
+                                    <span class="fa fa-star-o" data-rating="5"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="product-grid3">
+                        <div class="product-image3">
+                            <span>
+                                <a href="#">
+                                    <img class="pic-1" id="imgSalesProduct3">
+                                </a>
+                            </span>
+                            <div class="product-text">
+                                <h3 class="title"><a href="#" id="lnkSalesProduct3"></a></h3>
+                                <div class="star-rating">
+                                    <span class="fa fa-star" data-rating="1"></span>
+                                    <span class="fa fa-star" data-rating="2"></span>
+                                    <span class="fa fa-star" data-rating="3"></span>
+                                    <span class="fa fa-star-o" data-rating="4"></span>
+                                    <span class="fa fa-star-o" data-rating="5"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Best Sales Section Ends -->
+            <div class="spacing"></div>
+
+            <!-- User Reviews Section Starts -->
+            <div style="text-align:center">
+                <h1>
+                    <label class="whitecolor" id="userReviewsMain1"></label>
+                    <label id="userReviewsMain2"></label>
+                </h1>
+
+                <div class="spacing-small"></div>
+                <h2 class="whitecolor" id="userReviewsDesc"></h2>
+                <br />
+            </div>
+            <div class="spacing"></div>
+
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="product-grid3">
+                        <div class="product-image3">
+                            <span>
+                                <a href="#">
+                                    <img class="pic-1" id="imgReviewsProduct1">
+                                </a>
+                            </span>
+                            <span class="product-text-reviews" id="txtReviewsProduct1">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="product-grid3">
+                        <div class="product-image3">
+                            <span>
+                                <a href="#">
+                                    <img class="pic-1" id="imgReviewsProduct2">
+                                </a>
+                            </span>
+                            <span class="product-text-reviews" id="txtReviewsProduct2">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="product-grid3">
+                        <div class="product-image3">
+                            <span>
+                                <a href="#">
+                                    <img class="pic-1" id="imgReviewsProduct3">
+                                </a>
+                            </span>
+                            <span class="product-text-reviews" id="txtReviewsProduct3">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- User Reviews Section Ends -->
+            <div class="spacing">
+            </div>
+
+            <!-- News Letter Section Starts -->
+            <div class="content-newsletter">
+                <strong>
+                    <span class="newsletter" id="txtNewsLetter"></span>
+                    <span id="txtNewsLetterDesc"></span>
+                </strong>
+                <span class="floatright">
+                    <img id="imgEmail"><span id="txtTypeEmail"></span>
+                    <button type="button" class="btn btn-warning button-subscribe" id="btnSubscribe"></button>
+                </span>
+            </div>
+
+            <!-- News Letter Section Ends -->
+            <div class="spacing-small"></div>
+
+            <!-- Footer Section Starts -->
+            <div class="row footer">
+                <div class="col-sm-3 custtextalign" id="about1"></div>
+                <div class="col-sm-3 custtextalign" id="Sub1"></div>
+                <div class="col-sm-3 custtextalign" id="Sub2"></div>
+                <div class="col-sm-3">
+                    <p id="paymenticons"></p>
+                    <img id="imgpayment">
+                </div>
+            </div>
+
+            <!-- Footer Section Ends -->
+        </div>
 
 </body>
 
