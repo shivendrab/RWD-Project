@@ -60,7 +60,7 @@
 		 "imgpaymenticon":"images/paymenticons.png"
 		 
     }],
-    "navbar": ["Home", "Mobile", "Hot Deals", "About", "Contact Us"],
+    "navbar": ["Home", "Mobile", "Hot Deals", "About", "Contact"],
     "newarrivals": [{
         "label0": "Iphone 5",
         "description": "Add to cart"
